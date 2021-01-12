@@ -1,0 +1,24 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC6TUaC62jeE_r4BAegrIRxoa3U7-HhRjo",
+    authDomain: "medutente.firebaseapp.com",
+    databaseURL: "https://medutente.firebaseio.com",
+    projectId: "medutente",
+    storageBucket: "medutente.appspot.com",
+    messagingSenderId: "927792411315",
+    appId: "1:927792411315:web:15a8ed0053f15991f0f6c6",
+    measurementId: "G-5V4DBKWV9M"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
