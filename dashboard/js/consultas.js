@@ -1,13 +1,13 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyC6TUaC62jeE_r4BAegrIRxoa3U7-HhRjo",
-    authDomain: "medutente.firebaseapp.com",
-    databaseURL: "https://medutente.firebaseio.com",
-    projectId: "medutente",
-    storageBucket: "medutente.appspot.com",
-    messagingSenderId: "927792411315",
-    appId: "1:927792411315:web:b0a93a69ad70fa38f0f6c6",
-    measurementId: "G-WWLXD6K9K7"
-  };
+  apiKey: "AIzaSyAEzFxZevbsMcvWXQ7mcL-pYpqstH07XsI",
+  authDomain: "messegerapp-d957e.firebaseapp.com",
+  databaseURL: "https://messegerapp-d957e-default-rtdb.firebaseio.com",
+  projectId: "messegerapp-d957e",
+  storageBucket: "messegerapp-d957e.appspot.com",
+  messagingSenderId: "392477905883",
+  appId: "1:392477905883:web:2e97cdd7ce7eb381f5cdfe",
+  measurementId: "G-VK2PQKLPK9"
+};
   firebase.initializeApp(firebaseConfig);
 
 const auth = firebase.auth();
