@@ -60,7 +60,51 @@ var firebaseConfig = {
         
         })
 
+        
+        const chatForm = document.querySelector('#chat-form');
+        chatForm.addEventListener('submit', (e) => {
+            e.preventDefault();
 
+            const newMessage =      chatForm['mensage'].value;
+
+
+            firebase.database().ref("Chats").push({
+              issen : "false",
+              message :  newMessage,
+              messageid : "",
+              receiver : "",
+              sender : user.uid
+              });
+              console.log(newMessage);
+        })
+
+        
+
+        const createAppointment = document.querySelector('#create-appointment');
+        createAppointment.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const especialidade =      createAppointment['especialidade'].value;
+            const hora =      createAppointment['hora'].value;
+            const mes =      createAppointment['mes'].value;
+            const ano =      createAppointment['ano'].value;
+            const dia =      createAppointment['dia'].value;
+            
+            
+      
+        
+            firebase.database().ref("Users/" + user.uid + "/Appointments").push({
+              speciality: especialidade,
+              hour: hora,
+              month: mes,
+              year: ano,
+              day: dia,
+              confirmed: "false",
+              visible: "true",
+              medic: ""
+            });
+        
+        })
 
 
         const createMedic = document.querySelector('#create-Medic');
